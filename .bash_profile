@@ -13,6 +13,9 @@ export PS1="\[${_YELLOW}\]\t\[${_RESET}\]\[${_BOLD}\] \W \$ \[${_RESET}\]"
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# Set up the proxy on your Mac
+# export http_proxy=http://www-proxy.us.oracle.com:80/
+# export https_proxy=http://www-proxy.us.oracle.com:80/
 
 #function run
 run() {
@@ -22,3 +25,5 @@ run() {
       $@
     done
 }
+
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
