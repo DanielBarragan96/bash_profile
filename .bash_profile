@@ -1,17 +1,17 @@
-export CODESIGNBUREAU_CREDFILE=/Users/dabarrag/Documents/CSS/dabarrag_config.properties
+# export CODESIGNBUREAU_CREDFILE=/Users/dabarrag/Documents/CSS/dabarrag_config.properties
 
-_GREEN=$(tput setaf 2)
-_BLUE=$(tput setaf 4)
-_RED=$(tput setaf 1)
-_YELLOW=$(tput setaf 228)
-_RESET=$(tput sgr0)
-_BOLD=$(tput bold)
-export PS1="\[${_YELLOW}\]\t\[${_RESET}\]\[${_BOLD}\] \W \$ \[${_RESET}\]"
+_GREEN=$(tput setaf 2);
+_BLUE=$(tput setaf 4);
+_RED=$(tput setaf 1);
+_YELLOW=$(tput setaf 228);
+_RESET=$(tput sgr0);
+_BOLD=$(tput bold);
+export PS1="\[${_YELLOW}\]\t\[${_RESET}\]\[${_BOLD}\] \W \$ \[${_RESET}\]";
 
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+shopt -s checkwinsize;
 
 # Set up the proxy on your Mac
 # export http_proxy=http://www-proxy.us.oracle.com:80/
@@ -26,4 +26,18 @@ run() {
     done
 }
 
-alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+# alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+eval "$(/opt/homebrew/bin/brew shellenv)";
+
+export BASH_SILENCE_DEPRECATION_WARNING=1;
+
+
+
+
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
+
+
