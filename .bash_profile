@@ -26,6 +26,27 @@ run() {
     done
 }
 
+json() {
+    #do things with parameters like $1 such as
+    if [ $# -eq 0 ]; then
+      jsonFiles=( $(find . -iname '*.json' ) )
+      PS3="Your choice: "
+      select DOMAIN in "${jsonFiles[@]}"; do
+          if [[ $DOMAIN ]]; then
+              cat "$DOMAIN" | jq .
+              break
+          else
+              echo "Error: Invalid choice '$REPLY'"
+          fi
+      done
+
+    else 
+      cat "$1" | jq .
+    fi
+}
+
+
+
 # alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 eval "$(/opt/homebrew/bin/brew shellenv)";
 
