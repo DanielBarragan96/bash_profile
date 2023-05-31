@@ -1,5 +1,6 @@
 # export CODESIGNBUREAU_CREDFILE=/Users/dabarrag/Documents/CSS/dabarrag_config.properties
 
+TERM='xterm-256color';
 _GREEN=$(tput setaf 2);
 _BLUE=$(tput setaf 4);
 _RED=$(tput setaf 1);
@@ -62,5 +63,8 @@ if [ $ITERM_SESSION_ID ]; then
 fi
 
 . /opt/homebrew/etc/profile.d/z.sh
+
+alias la="ls -lah"
+alias mongodbbu="cd ~/scripts/ && ./mongodb_bu.sh"
 
 
