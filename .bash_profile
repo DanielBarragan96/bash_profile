@@ -49,7 +49,7 @@ json() {
 
 
 # alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-eval "$(/opt/homebrew/bin/brew shellenv)";
+#eval "$(/opt/homebrew/bin/brew shellenv)";
 
 export BASH_SILENCE_DEPRECATION_WARNING=1;
 
@@ -64,7 +64,8 @@ fi
 
 . /opt/homebrew/etc/profile.d/z.sh
 
-alias la="ls -lah"
-alias mongodbbu="cd ~/scripts/ && ./mongodb_bu.sh"
-
-
+alias la="ls -lah";
+alias mongodbbu="cd ~/scripts/ && ./mongodb_bu.sh";
+alias .="pwd";
+alias ..="cd ..";
+alias tac="tail -r ";
