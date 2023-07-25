@@ -49,7 +49,7 @@ json() {
 
 
 # alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-#eval "$(/opt/homebrew/bin/brew shellenv)";
+eval "$(/opt/homebrew/bin/brew shellenv)";
 
 export BASH_SILENCE_DEPRECATION_WARNING=1;
 
