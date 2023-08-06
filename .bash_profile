@@ -69,3 +69,4 @@ alias mongodbbu="cd ~/scripts/ && ./mongodb_bu.sh";
 alias .="pwd";
 alias ..="cd ..";
 alias tac="tail -r ";
+alias m='f(){ mkdir "$@";  cd $@; }; f'
