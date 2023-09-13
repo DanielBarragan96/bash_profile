@@ -70,3 +70,4 @@ alias .="pwd";
 alias ..="cd ..";
 alias tac="tail -r ";
 alias m='f(){ mkdir "$@";  cd $@; }; f'
+alias pip="python3 -m pip"
