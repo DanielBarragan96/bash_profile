@@ -71,3 +71,5 @@ alias ..="cd ..";
 alias tac="tail -r ";
 alias m='f(){ mkdir "$@";  cd $@; }; f'
 alias pip="python3 -m pip"
+alias muestra="java -jar /Users/dabarrag/projects/java/muestra/target/Cuentas-4.0-jar-with-dependencies.jar"
+export NODE_OPTIONS=--openssl-legacy-provider
