@@ -1,5 +1,6 @@
 alt-tab
 android-studio
+apparency
 arc
 betterzip
 calibre
@@ -21,9 +22,17 @@ notion
 nvidia-geforce-now
 obs
 postman
+qlcolorcode
+qlimagesize
+qlmarkdown
+qlstephen
+qlvideo
+quicklook-json
+quicklookase
 spectacle
 spotify
 sublime-text
+suspicious-package
 teamviewer
 tomatobar
 visual-studio-code
