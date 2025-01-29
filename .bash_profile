@@ -79,7 +79,7 @@ source "/opt/homebrew/opt/fzf/shell/key-bindings.bash"
 
 alias gita="git add"
 alias gits="git status"
-alias gitb="git branch -a"
+alias gitb="git branch"
 gitc() {
   git commit -m "$*"
 }
