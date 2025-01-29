@@ -76,3 +76,10 @@ alias fzf="fzf -i -m --ansi --color dark --border rounded -q '!node_modules ' --
 
 source "/opt/homebrew/opt/fzf/shell/completion.bash"
 source "/opt/homebrew/opt/fzf/shell/key-bindings.bash"
+
+alias gita="git add"
+alias gits="git status"
+alias gitb="git branch -a"
+gitc() {
+  git commit -m "$*"
+}
